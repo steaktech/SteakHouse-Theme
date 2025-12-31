@@ -1,0 +1,60 @@
+/* steakhouse-theme.css
+   Global color tokens for SteakHouse UI
+   Usage example:
+     color: var(--sh-ember-500);
+     background: var(--sh-bg-900);
+     border-color: var(--sh-brown-600);
+*/
+
+:root {
+  /* Core palette (from your screenshots) */
+  --sh-ember-500: #f37732;
+  --sh-ember-400: #f7a553;
+  --sh-gold-300:  #fac883;
+
+  --sh-brown-400: #7a3c1b;
+  --sh-brown-600: #402315;
+
+  --sh-bg-900:    #0e0402;
+
+  /* Helpful aliases (optional, but convenient) */
+  --sh-accent:    var(--sh-ember-500);
+  --sh-accent-2:  var(--sh-ember-400);
+  --sh-highlight: var(--sh-gold-300);
+
+  --sh-surface:   var(--sh-brown-600);
+  --sh-surface-2: var(--sh-brown-400);
+  --sh-bg:        var(--sh-bg-900);
+
+  /* Text defaults that match this scheme */
+  --sh-text:      #f5efe9;   /* warm off-white */
+  --sh-text-dim:  rgba(245, 239, 233, 0.72);
+
+  /* Borders / lines */
+  --sh-border:    rgba(247, 165, 83, 0.22);
+  --sh-border-2:  rgba(250, 200, 131, 0.18);
+
+  /* Glows (for neon-ish highlights) */
+  --sh-glow-ember: rgba(243, 119, 50, 0.35);
+  --sh-glow-gold:  rgba(250, 200, 131, 0.30);
+}
+
+/* Optional utility classes (useful in plain HTML/CSS) */
+.sh-bg        { background: var(--sh-bg); }
+.sh-surface   { background: var(--sh-surface); }
+.sh-text      { color: var(--sh-text); }
+.sh-accent    { color: var(--sh-accent); }
+.sh-border    { border-color: var(--sh-border); }
+
+/* Optional button baseline example */
+.sh-btn {
+  background: var(--sh-accent);
+  color: #0e0402;
+  border: 1px solid var(--sh-border);
+  box-shadow: 0 0 18px var(--sh-glow-ember);
+  border-radius: 14px;
+  padding: 10px 14px;
+}
+.sh-btn:hover {
+  background: var(--sh-ember-400);
+}
