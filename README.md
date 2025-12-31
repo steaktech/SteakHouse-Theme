@@ -1,5 +1,3 @@
-# SteakHouse_Backend
-Trading Terminal 
-Home
-Trending 
-Databases
+# SteakHouse_Theme
+
+https://steakhouse.finance/media-kit
