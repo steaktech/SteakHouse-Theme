@@ -1,0 +1,64 @@
+/* steakhouse-theme-light.css
+   Light theme color tokens for SteakHouse UI
+   Designed to mirror dark theme structure for easy toggling
+*/
+
+:root {
+  /* Core palette (light-adapted, same brand DNA) */
+  --sh-ember-500: #e05a1a;   /* slightly deeper for contrast on light bg */
+  --sh-ember-400: #f08a3c;
+  --sh-gold-300:  #f2c166;
+
+  --sh-brown-400: #c9a27d;
+  --sh-brown-600: #9a6b47;
+
+  --sh-bg-900:    #faf7f3;   /* main background (warm light) */
+
+  /* Helpful aliases */
+  --sh-accent:    var(--sh-ember-500);
+  --sh-accent-2:  var(--sh-ember-400);
+  --sh-highlight: var(--sh-gold-300);
+
+  --sh-surface:   #ffffff;  /* cards / panels */
+  --sh-surface-2: #f3ede6;  /* secondary surfaces */
+  --sh-bg:        var(--sh-bg-900);
+
+  /* Text */
+  --sh-text:      #2a1a10;   /* dark brown text (not pure black) */
+  --sh-text-dim:  rgba(42, 26, 16, 0.65);
+
+  /* Borders / dividers */
+  --sh-border:    rgba(154, 107, 71, 0.35);
+  --sh-border-2:  rgba(224, 90, 26, 0.25);
+
+  /* Glows (much subtler in light mode) */
+  --sh-glow-ember: rgba(224, 90, 26, 0.18);
+  --sh-glow-gold:  rgba(242, 193, 102, 0.22);
+}
+
+/* Optional utility classes */
+.sh-bg        { background: var(--sh-bg); }
+.sh-surface   { background: var(--sh-surface); }
+.sh-surface-2 { background: var(--sh-surface-2); }
+.sh-text      { color: var(--sh-text); }
+.sh-accent    { color: var(--sh-accent); }
+.sh-border    { border-color: var(--sh-border); }
+
+/* Button baseline (light mode) */
+.sh-btn {
+  background: linear-gradient(
+    135deg,
+    var(--sh-ember-500),
+    var(--sh-ember-400)
+  );
+  color: #ffffff;
+  border: 1px solid var(--sh-border-2);
+  box-shadow: 0 6px 18px var(--sh-glow-ember);
+  border-radius: 14px;
+  padding: 10px 14px;
+}
+
+.sh-btn:hover {
+  filter: brightness(1.05);
+  box-shadow: 0 8px 22px var(--sh-glow-ember);
+}
